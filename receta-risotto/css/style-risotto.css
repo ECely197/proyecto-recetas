@@ -80,7 +80,7 @@ table {
 #main-risotto {
     margin: 2%;
     width: 95%;
-    max-width: 95%;
+    max-width: 1440px;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: repeat(2, 0.5fr) 200px;
