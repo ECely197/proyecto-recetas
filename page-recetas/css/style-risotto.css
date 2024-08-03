@@ -91,7 +91,9 @@ table {
 #img-risotto {
     width: 99%;
     height: auto;
+    max-height: 236px;
     border-radius: 5px;
+    object-fit: cover;
 }
 
 #section-receta {

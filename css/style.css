@@ -118,17 +118,19 @@ section a{
 .img-receta{
   width: 100%;
   height: auto;
-  border-radius: 5px;
   max-width: 100%;
   display: block;
   margin: 0 auto;
+  object-fit: cover;
+  border-radius: 5px 5px 0px 0px ;
 }
 
 .recipe{
   background-color: rgb(255, 255, 255);
   border-radius: 5px;
   width: 95%;
-  padding: 2%;
+  padding: 0;
+  min-height: 420px;
 }
 
 @media (max-width: 768px) {
