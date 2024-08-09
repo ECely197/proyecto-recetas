@@ -65,7 +65,14 @@ table {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-  }
+    transition: transform 0.3s ease, box-shadow 0.6s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#logo-bitcook:hover {
+  transform: translateY(1px); /* Elevar la tarjeta */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Sombras más pronunciadas */
+}
   #envia-receta {
     list-style: none;
     color: #ffffff;
