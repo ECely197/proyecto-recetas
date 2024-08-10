@@ -1,0 +1,249 @@
+html {
+    scroll-behavior: smooth;
+  }
+  
+  @import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
+  
+  header,
+  footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  h1,h2,
+  h3,h4 {
+    color: #7e4333;
+    font-family: "DM Serif Display";
+  }
+  a,p,ul,li{
+    font-family: "DM Sans";
+  }
+  header a {
+    text-decoration: none;
+    color: aliceblue;
+  }
+  header {
+    position: sticky;
+    top: 0px;
+    z-index: 1000;
+  }
+  footer{
+    margin-top: 2%;
+  }
+  body {
+    background-color: #f3e5d8;
+    margin: 0;
+    padding: 0;
+  }
+  section a{
+    text-decoration: none;
+    color: #000000;
+  }
+  #info-main {
+    width: 98%;
+    max-width: 1444px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1%;
+  }
+  
+  div.recipe ul{
+    position: relative;
+    list-style: none;
+  }
+  
+  div.recipe ul li{
+    position: relative;
+      padding-left: 30px; 
+  }
+  
+  .icon-clock {
+    position: absolute;
+    left: 0;
+    width: 15px; 
+    height: auto;
+    margin:2px 0px 0px 12px;
+  }
+  
+  .icon-moon{
+    width: 20px;
+    height: auto;
+    display: inline-block;
+  }
+  
+  #circle-moon{
+    background-color: #ffffff;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+  }
+  
+  #conten-receta-icon-moon{
+    display: flex;
+    gap: 20px;
+    justify-items: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .logo-bit{
+    margin-top: 10px;
+  }
+  
+  #logo-bitcook {
+    background-color: #255538;
+    width: 100%;
+    margin: 0.2%;
+    padding: 0.5%;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0px 5px 6px rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    transition: transform 0.3s ease, box-shadow 0.6s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  #logo-bitcook:hover {
+    transform: translateY(1px); /* Elevar la tarjeta */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Sombras más pronunciadas */
+  }
+  #envia-receta {
+    list-style: none;
+    color: #ffffff;
+    margin: 0;
+  }
+  
+  #titular {
+    background-image: url(../img/banner-principal.jpg);
+    background-size: cover;
+    width: 100%;
+    max-width: 1472px;
+    max-height: 341px;
+    height: auto;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    color: #000000;
+    border-radius: 8px;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 150%;
+  }
+  #txt-vaner{
+    background-color: rgba(228, 228, 228, 0.9);
+    border-radius: 5px;
+    margin-top: 20px;
+    margin-bottom: 10%;
+    padding:1%;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.7);
+  }
+  #search-bar{
+    display: none;
+    padding: 10px;
+      font-size: 16px;
+      width: 300px;
+      margin-right: 10px;
+      border-radius: 5px;
+      border: 1px solid #255538;
+      margin-left: 2%;
+      margin-top: -2%;
+      background-color: rgb(255, 255, 255, 1.6);
+      z-index: 6;
+  }
+  
+  #section-recetas-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas: 
+      "receta1 receta2 receta3"
+      "receta4 receta5 receta6"
+    ;
+    gap: 10px;
+    width: 100%;
+    margin: 0;
+  }
+  
+  .img-receta{
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+    object-fit: cover;
+    border-radius: 5px 5px 0px 0px ;
+  }
+  
+  .recipe{
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    width: 95%;
+    padding: 0;
+    min-height: 420px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.6s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .recipe:hover {
+    transform: translateY(-9px); /* Elevar la tarjeta */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Sombras más pronunciadas */
+  }
+  
+  section#section-recetas-grid div.recipe div{
+    padding: 15px;
+  }
+  
+  @media (max-width: 768px) {
+    #section-recetas-grid{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: auto;
+      grid-template-areas: 
+        "receta1 receta2"
+        "receta3 receta4"
+        "receta5 receta6"
+      ;
+      gap: 10px;
+      width: 100%;
+      margin: 0;
+    }
+  #titular{
+      
+      font-size: 100%;
+  }
+  #titular img{
+    background-image: url(../img/banner-principal.jpg);
+    width: 100%;
+  }
+  }
+  
+  @media (max-width: 560px) {
+    #section-recetas-grid{
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: auto;
+      grid-template-areas: 
+        "receta1"
+        "receta2"
+        "receta3"
+        "receta4"
+        "receta5"
+        "receta6"
+      ;
+      gap: 10px;
+      width: 100%;
+      margin: 0;
+    }
+  #titular{
+    font-size: 100%;
+  }
+    
+  }

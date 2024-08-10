@@ -60,18 +60,46 @@ div.recipe ul li{
 .icon-clock {
   position: absolute;
   left: 0;
-  top: 50%; 
-  transform: translateY(-110%); 
   width: 15px; 
-  height: auto; 
-  margin: 10px;
+  height: auto;
+  margin:2px 0px 0px 12px;
+}
+
+.icon-moon{
+  width: 20px;
+  height: auto;
+  display: inline-block;
+}
+
+#circle-moon{
+  background-color: #ffffff;
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+#conten-receta-icon-moon{
+  display: flex;
+  gap: 20px;
+  justify-items: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.logo-bit{
+  margin-top: 10px;
 }
 
 #logo-bitcook {
   background-color: #255538;
   width: 100%;
   margin: 0.2%;
-  padding: 15px;
+  padding: 0.5%;
   height: auto;
   border-radius: 5px;
   box-shadow: 0px 5px 6px rgba(0, 0, 0, 0.3);
