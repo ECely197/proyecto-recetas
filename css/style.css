@@ -46,6 +46,27 @@ section a{
   margin-right: auto;
   margin-top: 1%;
 }
+
+div.recipe ul{
+  position: relative;
+  list-style: none;
+}
+
+div.recipe ul li{
+  position: relative;
+    padding-left: 30px; 
+}
+
+.icon-clock {
+  position: absolute;
+  left: 0;
+  top: 50%; 
+  transform: translateY(-110%); 
+  width: 15px; 
+  height: auto; 
+  margin: 10px;
+}
+
 #logo-bitcook {
   background-color: #255538;
   width: 100%;
