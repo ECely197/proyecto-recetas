@@ -51,6 +51,10 @@ table {
     text-align: right;
   }
 
+  a{
+    text-decoration: none;
+  }
+
   #img-text h4,p{
     margin: 0;
   }
@@ -70,8 +74,8 @@ table {
 }
 
 #logo-bitcook:hover {
-  transform: translateY(1px); /* Elevar la tarjeta */
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Sombras más pronunciadas */
+  transform: translateY(1px); 
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /
 }
   #envia-receta {
     list-style: none;
@@ -140,11 +144,22 @@ table {
   border-radius: 5px;
 }
 
+a{
+  display: flex;
+  align-items: center;
+}
 .section-img-recipes {
   display: flex;
   align-items: center;
   margin-bottom: 20px;
+  transition: transform 0.3s ease, box-shadow 0.6s ease;
 }
+
+.section-img-recipes:hover {
+  transform: translateY(1px); 
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); 
+}
+
 
 .img-recipe {
   width: 150px;
