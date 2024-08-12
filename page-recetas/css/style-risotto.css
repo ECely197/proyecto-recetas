@@ -127,8 +127,8 @@ footer div#logo-bitcook-footer div {
   grid-template-rows: auto;
   grid-template-areas:
     "receta receta ingrediente"
-    "receta receta ingrediente"
-    "receta receta more";
+    "receta receta more"
+    ;
   gap: 10px;
 }
 #img-risotto {

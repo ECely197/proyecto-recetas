@@ -23,6 +23,7 @@ ul,
 li {
   font-family: "DM Sans";
 }
+
 header a {
   text-decoration: none;
   color: aliceblue;
@@ -153,7 +154,7 @@ footer div#logo-bitcook-footer div {
   background-image: url(../img/banner-principal.jpg);
   background-size: cover;
   width: 100%;
-  max-width: 1472px;
+  max-width: 1444px;
   max-height: 341px;
   height: auto;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
@@ -196,7 +197,13 @@ footer div#logo-bitcook-footer div {
     "receta4 receta5 receta6";
   gap: 10px;
   width: 100%;
+  max-width: 1444px;
   margin: 0;
+  padding: 0;
+}
+
+#section-recetas-grid a{
+  max-width: 100%;
 }
 
 .img-receta {
@@ -212,12 +219,13 @@ footer div#logo-bitcook-footer div {
 .recipe {
   background-color: rgb(255, 255, 255);
   border-radius: 5px;
-  width: 95%;
+  width: 100%;
   padding: 0;
   min-height: 420px;
   overflow: hidden;
   transition: transform 0.3s ease, box-shadow 0.6s ease;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 0;
 }
 
 .recipe:hover {
