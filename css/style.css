@@ -95,7 +95,7 @@ div.recipe ul li{
   margin-top: 10px;
 }
 
-#logo-bitcook {
+#logo-bitcook-header {
   background-color: #255538;
   width: 100%;
   margin: 0.2%;
@@ -110,10 +110,34 @@ div.recipe ul li{
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-#logo-bitcook:hover {
-  transform: translateY(1px); /* Elevar la tarjeta */
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Sombras más pronunciadas */
+#logo-bitcook-footer {
+  background-color: #255538;
+  width: 100%;
+  margin: 0.2% 0.2% 0% 0.2%;
+  padding: 0.5%;
+  height: 50px;
+  border-radius: 5px;
+  box-shadow: 0px 5px 6px rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  transition: transform 0.3s ease, box-shadow 0.6s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
+
+#logo-bitcook-header:hover, #logo-bitcook-footer:hover {
+  transform: translateY(1px); 
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); 
+}
+footer div#logo-bitcook-footer img{
+  margin-top: auto;
+  margin-bottom: auto;
+}
+footer div#logo-bitcook-footer div{
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
 #envia-receta {
   list-style: none;
   color: #ffffff;
@@ -193,8 +217,8 @@ div.recipe ul li{
 }
 
 .recipe:hover {
-  transform: translateY(-9px); /* Elevar la tarjeta */
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Sombras más pronunciadas */
+  transform: translateY(-9px); 
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); 
 }
 
 section#section-recetas-grid div.recipe div{
@@ -246,4 +270,37 @@ section#section-recetas-grid div.recipe div{
   font-size: 100%;
 }
   
+}
+
+
+.dark-mode body {
+  background-color: #1e1e1e;
+  color: #ffffff;
+}
+
+.dark-mode header, .dark-mode footer {
+  background-color: #1e1e1e;
+}
+
+.dark-mode h2, .dark-mode h3, .dark-mode h4 {
+  color: #ffcc00;
+}
+
+.dark-mode a, .dark-mode p, .dark-mode ul, .dark-mode li {
+  color: #ffffff;
+}
+
+.dark-mode .recipe {
+  background-color: #2a2a2a;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.dark-mode .recipe:hover {
+  transform: translateY(-9px); 
+  box-shadow: 0 10px 20px rgba(255, 255, 255, 0.2); 
+}
+
+.dark-mode #logo-bitcook-header:hover, #logo-bitcook-footer:hover {
+  transform: translateY(1px); 
+  box-shadow: 0 10px 20px rgba(255, 255, 255, 0.2); 
 }

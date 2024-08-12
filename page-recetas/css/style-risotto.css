@@ -58,30 +58,58 @@ table {
   #img-text h4,p{
     margin: 0;
   }
-  #logo-bitcook {
-    background-color: #255538;
-    width: 100%;
-    margin: 0.2%;
-    padding: 15px;
-    height: auto;
-    border-radius: 5px;
-    box-shadow: 0px 5px 6px rgba(0, 0, 0, 0.3);
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    transition: transform 0.3s ease, box-shadow 0.6s ease;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-#logo-bitcook:hover {
-  transform: translateY(1px); 
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /
-}
+  .logo-bit{
+    margin-top: 10px;
+  }
+    #logo-bitcook-header {
+      background-color: #255538;
+      width: 100%;
+      margin: 0.2%;
+      padding: 0.5%;
+      height: auto;
+      border-radius: 5px;
+      box-shadow: 0px 5px 6px rgba(0, 0, 0, 0.3);
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      transition: transform 0.3s ease, box-shadow 0.6s ease;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    
+    #logo-bitcook-footer {
+      background-color: #255538;
+      width: 100%;
+      margin: 0.2% 0.2% 0% 0.2%;
+      padding: 0.5%;
+      height: 50px;
+      border-radius: 5px;
+      box-shadow: 0px 5px 6px rgba(0, 0, 0, 0.3);
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      transition: transform 0.3s ease, box-shadow 0.6s ease;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    
+    #logo-bitcook-header:hover, #logo-bitcook-footer:hover {
+      transform: translateY(1px); 
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); 
+    }
+    footer div#logo-bitcook-footer img{
+      margin-top: auto;
+      margin-bottom: auto;
+    }
+    footer div#logo-bitcook-footer div{
+      margin-top: auto;
+      margin-bottom: auto;
+    }
+    
   #envia-receta {
     list-style: none;
     color: #ffffff;
     margin: 0;
   }
+  
 
 #main-risotto {
   width: 98%;
@@ -174,6 +202,31 @@ a{
   justify-content: center;
 }
 
+.icon-moon{
+  width: 20px;
+  height: auto;
+  display: inline-block;
+}
+
+#circle-moon{
+  background-color: #ffffff;
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+#conten-receta-icon-moon{
+  display: flex;
+  gap: 20px;
+  justify-items: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
 #img-text {
   max-width: 800px;
   margin: 0 auto;
@@ -202,3 +255,46 @@ a{
 }
 
 
+
+
+.dark-mode body {
+  background-color: #1e1e1e;
+  color: #ffffff;
+}
+
+.dark-mode header, .dark-mode footer {
+  background-color: #1e1e1e;
+}
+
+.dark-mode h1, .dark-mode h2, .dark-mode h3, .dark-mode h4 {
+  color: #ffcc00;
+}
+
+.dark-mode a, .dark-mode p, .dark-mode ul, .dark-mode li {
+  color: #ffffff;
+}
+
+.dark-mode #section-receta {
+  background-color: #2a2a2a;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.dark-mode #section-ingredients {
+  background-color: #2a2a2a;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.dark-mode #section-more-recipes {
+  background-color: #2a2a2a;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.dark-mode .section-img-recipes:hover {
+  transform: translateY(1px); 
+  box-shadow: 0 10px 20px rgba(255, 255, 255, 0.2); 
+}
+
+.dark-mode #logo-bitcook-header:hover, #logo-bitcook-footer:hover {
+  transform: translateY(1px); 
+  box-shadow: 0 10px 20px rgba(255, 255, 255, 0.2); 
+}

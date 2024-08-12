@@ -11,7 +11,7 @@ html {
     align-items: center;
   }
   h1,h2,
-  h3,h4 {
+  h3,h4,label {
     color: #7e4333;
     font-family: "DM Serif Display";
   }
@@ -27,42 +27,21 @@ html {
     top: 0px;
     z-index: 1000;
   }
-  footer{
-    margin-top: 2%;
-  }
+ 
   body {
     background-color: #f3e5d8;
     margin: 0;
     padding: 0;
   }
-  section a{
-    text-decoration: none;
-    color: #000000;
-  }
+
   #info-main {
-    width: 98%;
+    width: 60%;
     max-width: 1444px;
     margin-left: auto;
     margin-right: auto;
     margin-top: 1%;
-  }
-  
-  div.recipe ul{
-    position: relative;
-    list-style: none;
-  }
-  
-  div.recipe ul li{
-    position: relative;
-      padding-left: 30px; 
-  }
-  
-  .icon-clock {
-    position: absolute;
-    left: 0;
-    width: 15px; 
-    height: auto;
-    margin:2px 0px 0px 12px;
+    background-color: #ffffff;
+    padding: 15px;
   }
   
   .icon-moon{
@@ -94,8 +73,7 @@ html {
   .logo-bit{
     margin-top: 10px;
   }
-  
-  #logo-bitcook {
+  #logo-bitcook-header {
     background-color: #255538;
     width: 100%;
     margin: 0.2%;
@@ -110,140 +88,93 @@ html {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   }
   
-  #logo-bitcook:hover {
-    transform: translateY(1px); /* Elevar la tarjeta */
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Sombras más pronunciadas */
+  #logo-bitcook-footer {
+    background-color: #255538;
+    width: 100%;
+    margin: 0.2% 0.2% 0% 0.2%;
+    padding: 0.5%;
+    height: 50px;
+    border-radius: 5px;
+    box-shadow: 0px 5px 6px rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    transition: transform 0.3s ease, box-shadow 0.6s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   }
+  
+  #logo-bitcook-header:hover, #logo-bitcook-footer:hover {
+    transform: translateY(1px); 
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); 
+  }
+  footer div#logo-bitcook-footer img{
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+  footer div#logo-bitcook-footer div{
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+  
   #envia-receta {
     list-style: none;
     color: #ffffff;
     margin: 0;
   }
   
-  #titular {
-    background-image: url(../img/banner-principal.jpg);
-    background-size: cover;
+  textarea{
+    resize: none;
+    overflow: auto;
+  }
+  .cuadro-texto{
     width: 100%;
-    max-width: 1472px;
-    max-height: 341px;
-    height: auto;
-    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-    color: #000000;
-    border-radius: 8px;
-    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-size: 150%;
+    padding: 12px 20px;
+    height: 55%;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+    background-color: #f8f8f8;
+    transition: all 0.3s ease-in-out;
   }
-  #txt-vaner{
-    background-color: rgba(228, 228, 228, 0.9);
-    border-radius: 5px;
-    margin-top: 20px;
-    margin-bottom: 10%;
-    padding:1%;
-    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.7);
+
+  input[type="text"]:focus, textarea:focus{
+    border: 1px solid #6DA5C0;
+    background-color: #ffffff;
+    box-shadow: 0 0 8px rgba(109, 165, 192, 0.5);
+    outline: none;
   }
-  #search-bar{
-    display: none;
-    padding: 10px;
-      font-size: 16px;
-      width: 300px;
-      margin-right: 10px;
-      border-radius: 5px;
-      border: 1px solid #255538;
-      margin-left: 2%;
-      margin-top: -2%;
-      background-color: rgb(255, 255, 255, 1.6);
-      z-index: 6;
-  }
-  
-  #section-recetas-grid{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: auto;
-    grid-template-areas: 
-      "receta1 receta2 receta3"
-      "receta4 receta5 receta6"
-    ;
-    gap: 10px;
-    width: 100%;
-    margin: 0;
-  }
-  
-  .img-receta{
-    width: 100%;
-    height: auto;
-    max-width: 100%;
-    display: block;
-    margin: 0 auto;
-    object-fit: cover;
-    border-radius: 5px 5px 0px 0px ;
-  }
-  
-  .recipe{
-    background-color: rgb(255, 255, 255);
-    border-radius: 5px;
-    width: 95%;
-    padding: 0;
-    min-height: 420px;
-    overflow: hidden;
-    transition: transform 0.3s ease, box-shadow 0.6s ease;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  }
-  
-  .recipe:hover {
-    transform: translateY(-9px); /* Elevar la tarjeta */
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Sombras más pronunciadas */
-  }
-  
-  section#section-recetas-grid div.recipe div{
-    padding: 15px;
-  }
-  
-  @media (max-width: 768px) {
-    #section-recetas-grid{
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      grid-template-rows: auto;
-      grid-template-areas: 
-        "receta1 receta2"
-        "receta3 receta4"
-        "receta5 receta6"
-      ;
-      gap: 10px;
-      width: 100%;
-      margin: 0;
-    }
-  #titular{
-      
-      font-size: 100%;
-  }
-  #titular img{
-    background-image: url(../img/banner-principal.jpg);
-    width: 100%;
-  }
-  }
-  
-  @media (max-width: 560px) {
-    #section-recetas-grid{
-      display: grid;
-      grid-template-columns: 1fr;
-      grid-template-rows: auto;
-      grid-template-areas: 
-        "receta1"
-        "receta2"
-        "receta3"
-        "receta4"
-        "receta5"
-        "receta6"
-      ;
-      gap: 10px;
-      width: 100%;
-      margin: 0;
-    }
-  #titular{
-    font-size: 100%;
-  }
-    
-  }
+
+
+button {
+  background-color: #255538; 
+  color: white; 
+  padding: 12px 24px; 
+  border: none; 
+  border-radius: 4px; 
+  font-size: 16px;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease; 
+}
+
+
+button:hover {
+  background-color: #4d8062; 
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15); 
+  transform: translateY(-2px);
+}
+
+button:active {
+  background-color: #255538; 
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2); 
+  transform: translateY(1px); 
+}
+
+footer{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
