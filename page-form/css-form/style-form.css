@@ -1,179 +1,185 @@
 html {
-    scroll-behavior: smooth;
-  }
-  
-  @import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
-  
-  header,
-  footer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  h1,h2,
-  h3,h4,label {
-    color: #7e4333;
-    font-family: "DM Serif Display";
-  }
-  a,p,ul,li{
-    font-family: "DM Sans";
-  }
-  header a {
-    text-decoration: none;
-    color: aliceblue;
-  }
-  header {
-    position: sticky;
-    top: 0px;
-    z-index: 1000;
-  }
- 
-  body {
-    background-color: #f3e5d8;
-    margin: 0;
-    padding: 0;
-  }
+  scroll-behavior: smooth;
+}
 
-  #info-main {
-    width: 60%;
-    max-width: 1444px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 1%;
-    background-color: #ffffff;
-    padding: 15px;
-    border-radius: 5px;
-  }
-  
-  .icon-moon{
-    width: 20px;
-    height: auto;
-    display: inline-block;
-  }
-  
-  #circle-moon{
-    background-color: #f3e5d8;
-    width: 40px;
-    height: 40px;
-    border-radius: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  #conten-receta-icon-moon{
-    display: flex;
-    gap: 20px;
-    justify-items: center;
-    align-items: center;
-    margin: 0;
-    padding: 0;
-  }
-  
-  .logo-bit{
-    margin-top: 10px;
-  }
-  #logo-bitcook-header {
-    background-color: #255538;
-    width: 100%;
-    margin: 0.2%;
-    padding: 0.5%;
-    height: auto;
-    border-radius: 5px;
-    box-shadow: 0px 5px 6px rgba(0, 0, 0, 0.3);
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    transition: transform 0.3s ease, box-shadow 0.6s ease;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  }
-  
-  #logo-bitcook-footer {
-    background-color: #255538;
-    width: 100%;
-    margin: 0.2% 0.2% 0% 0.2%;
-    padding: 0.5%;
-    height: 50px;
-    border-radius: 5px;
-    box-shadow: 0px 5px 6px rgba(0, 0, 0, 0.3);
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    transition: transform 0.3s ease, box-shadow 0.6s ease;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  }
-  
-  #logo-bitcook-header:hover, #logo-bitcook-footer:hover {
-    transform: translateY(1px); 
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); 
-  }
-  footer div#logo-bitcook-footer img{
-    margin-top: auto;
-    margin-bottom: auto;
-  }
-  footer div#logo-bitcook-footer div{
-    margin-top: auto;
-    margin-bottom: auto;
-  }
-  
-  #envia-receta {
-    list-style: none;
-    color: #ffffff;
-    margin: 0;
-  }
-  
-  textarea{
-    resize: none;
-    overflow: auto;
-  }
-  .cuadro-texto{
-    width: 100%;
-    padding: 12px 20px;
-    height: 55%;
-    margin: 8px 0;
-    display: inline-block;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-    font-size: 16px;
-    background-color: #f8f8f8;
-    transition: all 0.3s ease-in-out;
-  }
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
 
-  input[type="text"]:focus, textarea:focus{
-    border: 1px solid #6DA5C0;
-    background-color: #ffffff;
-    box-shadow: 0 0 8px rgba(109, 165, 192, 0.5);
-    outline: none;
-  }
+header,
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+h1,
+h2,
+h3,
+h4,
+label {
+  color: #7e4333;
+  font-family: "DM Serif Display";
+}
+a,
+p,
+ul,
+li {
+  font-family: "DM Sans";
+}
+header a {
+  text-decoration: none;
+  color: aliceblue;
+}
+header {
+  position: sticky;
+  top: 0px;
+  z-index: 1000;
+}
 
+body {
+  background-color: #f3e5d8;
+  margin: 0;
+  padding: 0;
+}
+
+#info-main {
+  width: 60%;
+  max-width: 1444px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1%;
+  background-color: #ffffff;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+.icon-moon {
+  width: 20px;
+  height: auto;
+  display: inline-block;
+}
+
+#circle-moon {
+  background-color: #f3e5d8;
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#conten-receta-icon-moon {
+  display: flex;
+  gap: 20px;
+  justify-items: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.logo-bit {
+  margin-top: 10px;
+}
+#logo-bitcook-header {
+  background-color: #255538;
+  width: 100%;
+  margin: 0.2%;
+  padding: 0.5%;
+  height: auto;
+  border-radius: 5px;
+  box-shadow: 0px 5px 6px rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  transition: transform 0.3s ease, box-shadow 0.6s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#logo-bitcook-footer {
+  background-color: #255538;
+  width: 100%;
+  margin: 0.2% 0.2% 0% 0.2%;
+  padding: 0.5%;
+  height: 50px;
+  border-radius: 5px;
+  box-shadow: 0px 5px 6px rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  transition: transform 0.3s ease, box-shadow 0.6s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#logo-bitcook-header:hover,
+#logo-bitcook-footer:hover {
+  transform: translateY(1px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+footer div#logo-bitcook-footer img {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+footer div#logo-bitcook-footer div {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+#envia-receta {
+  list-style: none;
+  color: #ffffff;
+  margin: 0;
+}
+
+textarea {
+  resize: none;
+  overflow: auto;
+}
+.cuadro-texto {
+  width: 100%;
+  padding: 12px 20px;
+  height: 55%;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 16px;
+  background-color: #f8f8f8;
+  transition: all 0.3s ease-in-out;
+}
+
+input[type="text"]:focus,
+textarea:focus {
+  border: 1px solid #6da5c0;
+  background-color: #ffffff;
+  box-shadow: 0 0 8px rgba(109, 165, 192, 0.5);
+  outline: none;
+}
 
 button {
-  background-color: #255538; 
-  color: white; 
-  padding: 12px 24px; 
-  border: none; 
-  border-radius: 4px; 
+  background-color: #255538;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 4px;
   font-size: 16px;
   cursor: pointer;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  transition: all 0.3s ease; 
+  transition: all 0.3s ease;
 }
 
-
 button:hover {
-  background-color: #4d8062; 
-  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15); 
+  background-color: #4d8062;
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
   transform: translateY(-2px);
 }
 
 button:active {
-  background-color: #255538; 
-  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2); 
-  transform: translateY(1px); 
+  background-color: #255538;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+  transform: translateY(1px);
 }
 
-footer{
+footer {
   position: absolute;
   bottom: 0;
   width: 100%;
@@ -184,41 +190,50 @@ footer{
   color: #ffffff;
 }
 
-.dark-mode header, .dark-mode footer {
+.dark-mode header,
+.dark-mode footer {
   background-color: #1e1e1e;
 }
 
-.dark-mode h1, .dark-mode h2, .dark-mode h3, .dark-mode h4, .dark-mode label {
+.dark-mode h1,
+.dark-mode h2,
+.dark-mode h3,
+.dark-mode h4,
+.dark-mode label {
   color: #ffcc00;
 }
 
-.dark-mode a, .dark-mode p, .dark-mode ul, .dark-mode li {
+.dark-mode a,
+.dark-mode p,
+.dark-mode ul,
+.dark-mode li {
   color: #ffffff;
 }
-
 
 .dark-mode #info-main {
   background-color: #2a2a2a;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
 }
 
-.dark-mode #logo-bitcook-header:hover, #logo-bitcook-footer:hover {
-  transform: translateY(1px); 
-  box-shadow: 0 10px 20px rgba(255, 255, 255, 0.2); 
+.dark-mode #logo-bitcook-header:hover,
+#logo-bitcook-footer:hover {
+  transform: translateY(1px);
+  box-shadow: 0 10px 20px rgba(255, 255, 255, 0.2);
 }
 
-.dark-mode [type="text"]:focus, textarea:focus{
+.dark-mode [type="text"]:focus,
+textarea:focus {
   border: 1px solid #ffffff;
   background-color: #ffffff;
   box-shadow: 0 0 8px rgba(255, 255, 255, 0.5);
   outline: none;
 }
 
-.dark-mode #circle-moon{
+.dark-mode #circle-moon {
   background-color: #2a2a2a;
   border: 1px solid #ffffff;
 }
 
-.dark-mode .icon-moon{
+.dark-mode .icon-moon {
   width: 25px;
 }

@@ -10,12 +10,17 @@ footer {
   justify-content: center;
   align-items: center;
 }
-h1,h2,
-h3,h4 {
+h1,
+h2,
+h3,
+h4 {
   color: #7e4333;
   font-family: "DM Serif Display";
 }
-a,p,ul,li{
+a,
+p,
+ul,
+li {
   font-family: "DM Sans";
 }
 header a {
@@ -27,7 +32,7 @@ header {
   top: 0px;
   z-index: 1000;
 }
-footer{
+footer {
   margin-top: 2%;
 }
 body {
@@ -35,7 +40,7 @@ body {
   margin: 0;
   padding: 0;
 }
-section a{
+section a {
   text-decoration: none;
   color: #000000;
 }
@@ -47,31 +52,31 @@ section a{
   margin-top: 1%;
 }
 
-div.recipe ul{
+div.recipe ul {
   position: relative;
   list-style: none;
 }
 
-div.recipe ul li{
+div.recipe ul li {
   position: relative;
-    padding-left: 30px; 
+  padding-left: 30px;
 }
 
 .icon-clock {
   position: absolute;
   left: 0;
-  width: 15px; 
+  width: 15px;
   height: auto;
-  margin:2px 0px 0px 12px;
+  margin: 2px 0px 0px 12px;
 }
 
-.icon-moon{
+.icon-moon {
   width: 20px;
   height: auto;
   display: inline-block;
 }
 
-#circle-moon{
+#circle-moon {
   background-color: #f3e5d8;
   width: 40px;
   height: 40px;
@@ -81,7 +86,7 @@ div.recipe ul li{
   justify-content: center;
 }
 
-#conten-receta-icon-moon{
+#conten-receta-icon-moon {
   display: flex;
   gap: 20px;
   justify-items: center;
@@ -90,7 +95,7 @@ div.recipe ul li{
   padding: 0;
 }
 
-.logo-bit{
+.logo-bit {
   margin-top: 10px;
 }
 
@@ -124,15 +129,16 @@ div.recipe ul li{
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-#logo-bitcook-header:hover, #logo-bitcook-footer:hover {
-  transform: translateY(1px); 
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); 
+#logo-bitcook-header:hover,
+#logo-bitcook-footer:hover {
+  transform: translateY(1px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
-footer div#logo-bitcook-footer img{
+footer div#logo-bitcook-footer img {
   margin-top: auto;
   margin-bottom: auto;
 }
-footer div#logo-bitcook-footer div{
+footer div#logo-bitcook-footer div {
   margin-top: auto;
   margin-bottom: auto;
 }
@@ -159,52 +165,51 @@ footer div#logo-bitcook-footer div{
   align-items: center;
   font-size: 150%;
 }
-#txt-vaner{
+#txt-vaner {
   background-color: rgba(228, 228, 228, 0.9);
   border-radius: 5px;
   margin-top: 20px;
   margin-bottom: 10%;
-  padding:1%;
+  padding: 1%;
   box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.7);
 }
-#search-bar{
+#search-bar {
   display: none;
   padding: 10px;
-    font-size: 16px;
-    width: 300px;
-    margin-right: 10px;
-    border-radius: 5px;
-    border: 1px solid #255538;
-    margin-left: 2%;
-    margin-top: -2%;
-    background-color: rgb(255, 255, 255, 1.6);
-    z-index: 6;
+  font-size: 16px;
+  width: 300px;
+  margin-right: 10px;
+  border-radius: 5px;
+  border: 1px solid #255538;
+  margin-left: 2%;
+  margin-top: -2%;
+  background-color: rgb(255, 255, 255, 1.6);
+  z-index: 6;
 }
 
-#section-recetas-grid{
+#section-recetas-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: auto;
-  grid-template-areas: 
+  grid-template-areas:
     "receta1 receta2 receta3"
-    "receta4 receta5 receta6"
-  ;
+    "receta4 receta5 receta6";
   gap: 10px;
   width: 100%;
   margin: 0;
 }
 
-.img-receta{
+.img-receta {
   width: 100%;
   height: auto;
   max-width: 100%;
   display: block;
   margin: 0 auto;
   object-fit: cover;
-  border-radius: 5px 5px 0px 0px ;
+  border-radius: 5px 5px 0px 0px;
 }
 
-.recipe{
+.recipe {
   background-color: rgb(255, 255, 255);
   border-radius: 5px;
   width: 95%;
@@ -216,76 +221,77 @@ footer div#logo-bitcook-footer div{
 }
 
 .recipe:hover {
-  transform: translateY(-9px); 
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); 
+  transform: translateY(-9px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
-section#section-recetas-grid div.recipe div{
+section#section-recetas-grid div.recipe div {
   padding: 15px;
 }
 
 @media (max-width: 768px) {
-  #section-recetas-grid{
+  #section-recetas-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
-    grid-template-areas: 
+    grid-template-areas:
       "receta1 receta2"
       "receta3 receta4"
-      "receta5 receta6"
-    ;
+      "receta5 receta6";
     gap: 10px;
     width: 100%;
     margin: 0;
   }
-#titular{
-    
+  #titular {
     font-size: 100%;
-}
-#titular img{
-  background-image: url(../img/banner-principal.jpg);
-  width: 100%;
-}
+  }
+  #titular img {
+    background-image: url(../img/banner-principal.jpg);
+    width: 100%;
+  }
 }
 
 @media (max-width: 560px) {
-  #section-recetas-grid{
+  #section-recetas-grid {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto;
-    grid-template-areas: 
+    grid-template-areas:
       "receta1"
       "receta2"
       "receta3"
       "receta4"
       "receta5"
-      "receta6"
-    ;
+      "receta6";
     gap: 10px;
     width: 100%;
     margin: 0;
   }
-#titular{
-  font-size: 100%;
+  #titular {
+    font-size: 100%;
+  }
 }
-  
-}
-
 
 .dark-mode body {
   background-color: #1e1e1e;
   color: #ffffff;
 }
 
-.dark-mode header, .dark-mode footer {
+.dark-mode header,
+.dark-mode footer {
   background-color: #1e1e1e;
 }
 
-.dark-mode h2, .dark-mode h3, .dark-mode h4 {
+.dark-mode h2,
+.dark-mode h3,
+.dark-mode h4 {
   color: #ffcc00;
 }
 
-.dark-mode a, .dark-mode p, .dark-mode ul, .dark-mode li {
+.dark-mode a,
+.dark-mode p,
+.dark-mode ul,
+.dark-mode li {
   color: #ffffff;
 }
 
@@ -295,20 +301,21 @@ section#section-recetas-grid div.recipe div{
 }
 
 .dark-mode .recipe:hover {
-  transform: translateY(-9px); 
-  box-shadow: 0 10px 20px rgba(255, 255, 255, 0.2); 
+  transform: translateY(-9px);
+  box-shadow: 0 10px 20px rgba(255, 255, 255, 0.2);
 }
 
-.dark-mode #logo-bitcook-header:hover, #logo-bitcook-footer:hover {
-  transform: translateY(1px); 
-  box-shadow: 0 10px 20px rgba(255, 255, 255, 0.2); 
+.dark-mode #logo-bitcook-header:hover,
+#logo-bitcook-footer:hover {
+  transform: translateY(1px);
+  box-shadow: 0 10px 20px rgba(255, 255, 255, 0.2);
 }
 
-.dark-mode #circle-moon{
+.dark-mode #circle-moon {
   background-color: #2a2a2a;
   border: 1px solid #ffffff;
 }
 
-.dark-mode .icon-moon{
+.dark-mode .icon-moon {
   width: 25px;
 }
