@@ -211,6 +211,13 @@ a {
   display: inline-block;
 }
 
+.prep-time{
+  padding-left: 5px;
+  background-color: #f3e5d8;
+  border-radius: 5px;
+  height: auto;
+}
+
 #circle-moon {
   background-color: #f3e5d8;
   width: 40px;
