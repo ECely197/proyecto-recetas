@@ -72,14 +72,13 @@ div.recipe ul li{
 }
 
 #circle-moon{
-  background-color: #ffffff;
+  background-color: #f3e5d8;
   width: 40px;
   height: 40px;
-  border-radius: 100%;
+  border-radius: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
-  
 }
 
 #conten-receta-icon-moon{
@@ -303,4 +302,13 @@ section#section-recetas-grid div.recipe div{
 .dark-mode #logo-bitcook-header:hover, #logo-bitcook-footer:hover {
   transform: translateY(1px); 
   box-shadow: 0 10px 20px rgba(255, 255, 255, 0.2); 
+}
+
+.dark-mode #circle-moon{
+  background-color: #2a2a2a;
+  border: 1px solid #ffffff;
+}
+
+.dark-mode .icon-moon{
+  width: 25px;
 }
