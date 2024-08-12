@@ -318,3 +318,11 @@ a {
 .dark-mode .icon-moon {
   width: 25px;
 }
+
+.dark-mode .prep-time h3{
+  color:#7e4333;
+}
+
+.dark-mode .prep-time ul li{
+  color:#000000;
+}
