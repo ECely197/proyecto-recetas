@@ -1,7 +1,7 @@
 {
-  "name": "api-recetas",
+  "name": "proyecto-recetas",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "index.mjs",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -11,6 +11,7 @@
   "description": "",
   "type": "module",
   "dependencies": {
-    "express": "^4.19.2"
+    "express": "^4.19.2",
+    "express-validator": "^7.2.0"
   }
 }
