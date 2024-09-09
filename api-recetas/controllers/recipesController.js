@@ -106,7 +106,7 @@ function editRecipe(req, res) {
   }
   return res
     .status(404)
-    .json({ message: `No se encontró una receta con el ID ${recipeId}` });
+    .json({ message: `No se encontró ninguna receta con el ID ${recipeId}` });
 }
 
 export default {
